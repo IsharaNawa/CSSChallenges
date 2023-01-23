@@ -146,15 +146,6 @@ h1::before {
   margin: 10px 0;
 }
 
-.main-flex-container {
-  display: flex;
-  gap: 40px;
-}
-
-.flex-items {
-  flex: 1;
-}
-
 .container {
   display: grid;
 
