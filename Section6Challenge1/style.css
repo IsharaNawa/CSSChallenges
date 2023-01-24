@@ -1,0 +1,109 @@
+/*
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    
+    MAIN COLOR: #087f5b
+    GREY COLOR: #343a40
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+}
+
+/* container */
+
+.pagination {
+  margin: 100px auto;
+  width: 1000px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* left and right */
+
+button {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.left-button,
+.right-button {
+  border: 1px #087f5b solid;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-button-icon,
+.right-button-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #087f5b;
+}
+
+.left-button:hover .left-button-icon,
+.right-button:hover .right-button-icon {
+  stroke: #fff;
+}
+
+.left-button:hover,
+.right-button:hover {
+  background-color: #087f5b;
+}
+
+/* buttons with anchor elements */
+
+.numbered-buttons {
+  font-size: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numbered-buttons:hover {
+  background-color: #087f5b;
+}
+
+.numbered-buttons:hover a,
+.numbered-buttons:active a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.selected-button {
+  background-color: #087f5b;
+}
+
+.selected-button a:link,
+.selected-button a:visited {
+  color: #fff;
+}
